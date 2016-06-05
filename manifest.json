@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "UG Skip Adpage",
+    "description": "This extension will skip the add pages that you are redirected to every now and then when clicking on links from the homepage of Ultimate Guitar",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.ultimate-guitar.com/components/interstitial/*",
+                "http://www.ultimate-guitar.com/components/interstitial/*"
+            ],
+            "js": ["content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "icon.png"
+    }
+}
